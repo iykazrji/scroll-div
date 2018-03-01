@@ -1,0 +1,31 @@
+/* ----- Scroll DIV -----*/
+
+.scroll-div{
+	display:flex;
+	justify-content:center;
+	align-items: center;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transition: all 1s ease-in;
+}
+.scroll-div.fade-in{
+	opacity: 0;
+}
+.scroll-div--show.fade-in{
+	opacity: 1;
+	transition: opacity 0.8s ease-in
+}
+.scroll-div.slide-right > div{
+    width: 0px;
+    overflow: hidden;
+    transition: 0.8s ease-in;
+    position: absolute;
+    left: 0;
+}
+.scroll-div--show.slide-right > div{
+    width: 100%;
+}
+.div-bg-image{
+    background-image: url('./john-mayer-pic.jpg')
+}
