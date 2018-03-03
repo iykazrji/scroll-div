@@ -26,6 +26,9 @@ body {
 .App-intro {
   font-size: large;
 }
+.div-bg-image{
+  background-image: url('../assets/imgs/john-mayer-pic.jpg')
+}
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

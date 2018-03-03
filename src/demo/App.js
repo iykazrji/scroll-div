@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import ScrollDiv from './scroll-div-component';
+import ScrollDiv from '../scroll-div-component/scroll-div-component';
 
 const styles = {
   marginTop: '50vh'
