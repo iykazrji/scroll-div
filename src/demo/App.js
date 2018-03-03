@@ -36,13 +36,19 @@ class App extends Component {
           <ScrollDiv
             scrolling={true}
             speed={'1.2'}
+            className="div-bg-img-wrapper"
             style={
               {
-                position: 'absolute'
+                position: 'absolute',
+                backgroundAttachment: "fixed",
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundImage: 'url(../assets/imgs/john-mayer-pic.jpg)'
               }
             }>
             <div className="div-bg-image" style={{ ...bgImgDivStyles }}>
-                And this is Just a Photo of John Mayer
+                <p>And this is Just a Photo of John Mayer</p>
             </div>
           </ScrollDiv>
       </div>
