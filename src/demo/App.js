@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import ScrollDiv from '../scroll-div-component/scroll-div-component';
+import JMBackground from '../assets/imgs/john-mayer-pic.jpg';
 
 const styles = {
   marginTop: '50vh'
@@ -15,7 +16,6 @@ const bgImgDivStyles = {
   display: 'flex',
   justifyContent: 'center',
   alignItems: 'center',
-  marginTop: '30vh',
   color: '#ffffff',
   fontWeight: '800',
   textTransform: 'uppercase',
@@ -44,7 +44,7 @@ class App extends Component {
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
                 backgroundSize: 'cover',
-                backgroundImage: 'url(../assets/imgs/john-mayer-pic.jpg)'
+                backgroundImage: `url(${JMBackground})`
               }
             }>
             <div className="div-bg-image" style={{ ...bgImgDivStyles }}>
